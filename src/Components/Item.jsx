@@ -1,12 +1,11 @@
 import React from "react";
+import styles from "./item.module.css";
 
-const Item = ({ id, task, complete }) => {
+const Item = ({  id, task, complete }) => {
   return (
-    <div>
+    <div >
       <h2>{id}</h2>
-      <p>{task}</p>
-      <button>{complete}</button>
-      
+      <p className={complete ? styles.completa : styles.completa1}>{task}</p>
     </div>
   );
 };
