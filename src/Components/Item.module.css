@@ -1,7 +1,12 @@
+.task {
+  font-size: 2rem;
+  color: #F8F8F2;
+}
+
 .completa {
-    text-decoration: line-through;
-  }
-  .completa1 {
-    text-decoration: underline;
-  }
-  
+  color: #50fa7b;
+  text-decoration: line-through;
+}
+.completa1 {
+  /* text-decoration: underline; */
+}
