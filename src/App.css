@@ -4,14 +4,22 @@
 
 body {
   margin: 0px;
+  background: #282a36;
+}
+ul {
+  padding: 0px;
 }
 li {
   list-style: none;
 }
 
 h1,
+p,
 input {
   margin: 0px;
+}
+h1 {
+  color: #f8f8f2;
 }
 .container {
   max-width: 50rem;
@@ -20,4 +28,19 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+input {
+  padding: 0.5rem 1rem;
+  margin-right: 10px;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: none;
+  color: #f8f8f2;
+  border: 2px solid #44475a;
+}
+
+.btn:hover {
+  cursor: pointer;
 }

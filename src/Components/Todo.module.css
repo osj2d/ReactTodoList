@@ -1,3 +1,23 @@
-.completa {
-  text-decoration: line-through;
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.error {
+  font-size: 1.125rem;
+  color: #ff5555;
+  margin-top: 0.5rem;
+}
+.adicionar:hover {
+  color: #8be9fd;
+  border-color: #8be9fd;
+}
+
+.complete:hover {
+  color: #50fa7b;
+  border-color: #50fa7b;
+}
+.delete:hover {
+  color: #ff5555;
+  border-color: #ff5555;
 }
