@@ -27,7 +27,11 @@ const Todo = () => {
       })
     );
   }
-//   https://bobbyhadz.com/blog/react-remove-element-from-state-array conferir esta pagina!!!
+  function handleClickComplete(e) {
+    console.log(e.target)
+    setCompletedTaskCount((e) => !e);
+  }
+  //   https://bobbyhadz.com/blog/react-remove-element-from-state-array conferir esta pagina!!!
   return (
     <div>
       <input
@@ -36,21 +40,21 @@ const Todo = () => {
         onInput={(e) => setInput(e.target.value)}
       />
       <button onClick={handleClick}>Add</button>
-      <div>
-        {todoList.map((todo) => (
-          <ul key={todo.id}>
-            <li className={completedTaskCount ? styles.completa : ""}>
-              {todo.task}
-            </li>
-            <button onClick={() => setCompletedTaskCount((e) => !e)}>
-              Complete
-            </button>
+      <ul>
+        {/* {todoList.map((todo) => (
+          <li
+            key={todo.id}
+            className={completedTaskCount ? styles.completa : ""}
+          >
+            <h2>{todo.task}</h2>
+
+            <button value={todo.id} onClick={handleClickComplete}>Complete</button>
             <button onClick={handleDeleteTodo} value={todo.id}>
               Delete
             </button>
-          </ul>
-        ))}
-      </div>
+          </li>
+        ))} */}
+      </ul>
     </div>
   );
 };

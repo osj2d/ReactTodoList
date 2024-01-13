@@ -5,8 +5,10 @@ import Todo from "./Components/Todo";
 function App() {
   return (
     <>
-      <h1>Todo List</h1>
-      <Todo />
+      <div className="container">
+        <h1>Todo List</h1>
+        <Todo />
+      </div>
     </>
   );
 }
